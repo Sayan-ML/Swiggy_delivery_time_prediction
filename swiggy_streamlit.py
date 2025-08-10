@@ -10,7 +10,7 @@ import pandas as pd
 import pickle
 import streamlit as st
 
-load_model = pickle.load(open('swiggy_model_pipe2', 'rb'))
+load_model = pickle.load(open('swiggy_model_pipe2.pkl', 'rb'))
 
 
 
@@ -59,4 +59,5 @@ def main():
       
 if __name__ == '__main__':
     main()
+
 
