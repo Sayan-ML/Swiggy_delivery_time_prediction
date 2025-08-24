@@ -116,5 +116,5 @@ This project is licensed under the **MIT License** – free to use, modify, and 
 ## 👨‍💻 Developed By  
 
 **Sayan Banerjee**  
-[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue)](https://www.linkedin.com/in/sayan-ban-456a29236/)  
-[![GitHub](https://img.shields.io/badge/GitHub-Profile-black)](https://github.com/Sayan-ML)  
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue)](https://www.linkedin.com/in/sayan-banerjee-0222a4214/) 
+[![GitHub](https://img.shields.io/badge/GitHub-Profile-black)](https://github.com/Sayan-ML) 
