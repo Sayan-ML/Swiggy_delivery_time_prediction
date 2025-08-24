@@ -70,7 +70,8 @@ Models Trained:
 - **LightGBM**  
 - **Random Forest Regressor**  
 - **Support Vector Regressor (SVR)**  
-- **Linear Regression**  
+- **Linear Regression**
+- **Feed Forward Neural Network**
 
 Optimization:  
 - Hyperparameter tuning with **Optuna (Bayesian Optimization)**  
