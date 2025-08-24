@@ -1,55 +1,120 @@
-📦 Delivery Time Prediction using Ensemble Regression Models
-This project focuses on building a high-performing regression model to predict delivery times based on a rich dataset of 40,000 entries sourced from Kaggle. Through meticulous data preprocessing, exploratory data analysis, feature selection, model training, and ensemble techniques, we achieved an impressive R² score of 0.88 using a Voting Regressor combining XGBoost and LightGBM.
+# 📦 Delivery Time Prediction using Ensemble Regression Models  
 
-📊 Dataset Overview
-Source: Kaggle
+![Python](https://img.shields.io/badge/Python-3.10-blue.svg)  
+![Scikit-learn](https://img.shields.io/badge/Scikit--Learn-ML-yellow.svg)  
+![LightGBM](https://img.shields.io/badge/LightGBM-Gradient--Boosting-brightgreen.svg)  
+![XGBoost](https://img.shields.io/badge/XGBoost-Ensemble-orange.svg)  
+![Optuna](https://img.shields.io/badge/Optuna-Hyperparameter%20Tuning-purple.svg)  
+![Contributions](https://img.shields.io/badge/Contributions-Welcome-brightgreen.svg)  
 
-Size: 40,000 rows
+---
 
-Features: Includes delivery-related attributes such as order date, delivery location, shipment mode, product type, and more.
+## 📖 Description  
+This project focuses on building a **high-performing regression system** to predict **delivery times** from a dataset of **40,000 entries (Kaggle)**.  
 
-🧹 Data Preprocessing
-Missing Value Handling:
+- Conducted **data preprocessing, EDA, feature engineering, feature selection**  
+- Trained multiple **regression models** and compared their performance  
+- Leveraged **ensemble techniques** to boost accuracy  
+- Final model: **Voting Regressor (XGBoost + LightGBM)**  
+- Achieved **R² score = 0.88**, ensuring reliable delivery time predictions  
 
-Tried multiple imputation techniques: Iterative Imputer, KNN Imputer, and distribution-based imputation.
+🔗 **Live Demo:** [Google Drive Link](https://drive.google.com/file/d/1D-7lHpS17M5VTUDwQ3lMRXEPs0AdKkSN/view?usp=sharing)  
 
-Also evaluated the impact of dropping missing values entirely.
+---
 
-Dropping missing values resulted in the best baseline model performance and was selected for final processing.
+## 📊 Dataset Overview  
 
-Standardization and encoding were applied where necessary to prepare the dataset for model training.
+- **Source:** Kaggle  
+- **Size:** 40,000 rows  
+- **Features:**  
+  - Order Date  
+  - Delivery Location  
+  - Shipment Mode  
+  - Product Type  
+  - Other delivery-related attributes  
 
-🔍 Exploratory Data Analysis (EDA)
-Visualized feature distributions and relationships to uncover key drivers of delivery time.
+---
 
-Identified influential variables and detected outliers and skewed distributions.
+## 🧹 Data Preprocessing  
 
-Performed correlation analysis and pairwise plotting to understand feature interactions.
+- **Missing Value Handling:**  
+  - Iterative Imputer, KNN Imputer, and distribution-based imputation were tested  
+  - Dropping missing values yielded the best baseline performance  
 
-🧠 Feature Selection
-Evaluated multiple selection techniques:
+- **Other Steps:**  
+  - Standardization for numerical features  
+  - Encoding categorical features  
+  - Outlier detection and removal  
 
-Forward Feature Selection
+---
 
-Recursive Feature Elimination (RFE)
+## 🔍 Exploratory Data Analysis (EDA)  
 
-Variance Inflation Factor (VIF)
+- Distribution plots to understand feature skewness  
+- Correlation heatmaps for feature interactions  
+- Pairwise plotting for visualizing dependencies  
+- Outlier detection (delivery delays, anomalies)  
 
-After assessing the impact of feature selection on model performance, all features were retained, as they contributed positively to overall accuracy.
+---
 
-🤖 Model Training & Optimization
-Trained and compared the following regression models:
+## 🧠 Feature Selection  
 
-XGBoost
+- Tested: **Forward Selection, RFE, Variance Inflation Factor (VIF)**  
+- Decision: Retained **all features**, as they contributed positively to accuracy  
 
-LightGBM
+---
 
-Random Forest Regressor
+## 🤖 Model Training & Optimization  
 
-Support Vector Regressor (SVR)
+Models Trained:  
+- **XGBoost**  
+- **LightGBM**  
+- **Random Forest Regressor**  
+- **Support Vector Regressor (SVR)**  
+- **Linear Regression**  
 
-Linear Regression
+Optimization:  
+- Hyperparameter tuning with **Optuna (Bayesian Optimization)**  
+- Final Model: **Voting Regressor (XGBoost + LightGBM)**  
+- **R² Score = 0.88**  
 
-Hyperparameter tuning was conducted using Optuna, leveraging Bayesian Optimization for efficient search across complex parameter spaces.
+---
 
-Live demo :- https://drive.google.com/file/d/1D-7lHpS17M5VTUDwQ3lMRXEPs0AdKkSN/view?usp=sharing
+## 🌟 Future Improvements  
+
+- Integrate **Deep Learning regression models** (e.g., TabNet, Transformers for tabular data)  
+- Build a **Streamlit dashboard** for interactive prediction  
+- Add **explainable AI (XAI)** using SHAP or LIME  
+- Deploy with **Docker/Kubernetes** for scalability  
+- Expand dataset with **real-time logistics data**  
+
+---
+
+## 🤝 Contributing  
+
+We welcome contributions!  
+1. Fork the repository 🍴  
+2. Create your feature branch 🌱 (`git checkout -b feature-xyz`)  
+3. Commit your changes ✔️ (`git commit -m "Added feature XYZ"`)  
+4. Push to the branch 🚀 (`git push origin feature-xyz`)  
+5. Open a Pull Request 🔥  
+
+---
+
+## 💖 Show Your Support  
+
+If you like this project, **please ⭐ the repo** and share with others 🙌  
+
+---
+
+## 📜 License  
+
+This project is licensed under the **MIT License** – free to use, modify, and distribute with attribution.  
+
+---
+
+## 👨‍💻 Developed By  
+
+**Sayan Banerjee**  
+[![LinkedIn](https://img.shields.io/badge/LinkedIn-Profile-blue)](https://www.linkedin.com/in/sayan-ban-456a29236/)  
+[![GitHub](https://img.shields.io/badge/GitHub-Profile-black)](https://github.com/Sayan-ML)  
